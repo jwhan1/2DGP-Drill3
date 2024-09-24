@@ -42,12 +42,14 @@ def run_bottom():
     draw_boy(x,90)
   pass
 def run_left():
+  for y in range(90,600,10):
+    draw_boy(1,y)
   pass
 def run_draw_rectangle():
  print("rectangle")
  #run_top()
  #run_right()
- run_bottom()
+ #run_bottom()
  run_left()
  pass#내용이 없는 함수
 
