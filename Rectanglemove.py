@@ -38,13 +38,15 @@ def run_right():
     draw_boy(800,y)
   pass
 def run_bottom():
+  for x in range(800,1,-10):
+    draw_boy(x,90)
   pass
 def run_left():
   pass
 def run_draw_rectangle():
  print("rectangle")
- run_top()
- run_right()
+ #run_top()
+ #run_right()
  run_bottom()
  run_left()
  pass#내용이 없는 함수
