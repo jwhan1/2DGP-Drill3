@@ -30,18 +30,16 @@ def run_draw_circle():
 def run_top():
   print('top')
   for x in range(1,800,10):
-    draw_boy(x,650)
+    draw_boy(x,600)
   pass
 def run_right():
   print('right')
-  for y in range(650,90,-10):
+  for y in range(600,90,-10):
     draw_boy(800,y)
   pass
 def run_bottom():
-  print('bottom')
   pass
 def run_left():
-  print('left')
   pass
 def run_draw_rectangle():
  print("rectangle")
@@ -54,7 +52,7 @@ def run_draw_rectangle():
 
 #뼈대를 잡기
 while True:
- #run_draw_rectangle()
- run_draw_circle()
+ run_draw_rectangle()
+ #run_draw_circle()
 
 close_canvas()
