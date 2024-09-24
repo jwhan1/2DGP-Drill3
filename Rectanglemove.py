@@ -53,21 +53,26 @@ def run_draw_rectangle():
  run_left()
  pass#내용이 없는 함수
 
+def coord_calculate(x, x1, y1, x2, y2):
+  return y1 + (y2 - y1) * (x - x1) / (x2 - x1)
 
-
+    
 def run_bottom_line():
-  print("bottom line")#(700,50)에서(100,50)까지
+  print("bottom line")#(700, 50)에서(100, 50)까지
   for x in range(700,100,-10):
     draw_boy(x,50)
   pass
 def run_left_line():
-  print("left line")#(100,50)에서(400,500)까지
-  for x in range(100,400,10):
-    y = 50 + 450 * (x - 100) / 300
+  print("left line")#(100, 50)에서(400, 500)까지
+  for x in range(100, 400, 10):
+    y = coord_calculate(x, 100, 50, 400, 500)
     draw_boy(x,y)
   pass
 def run_right_line():
-  print("right line")
+  print("right line")#(400, 500)에서 (700, 50)까지
+  for x in range(400, 700, 10):
+    y = coord_calculate(x, 400, 500, 700, 50)
+    draw_boy(x,y)
   pass
 def run_draw_triangle():
   print("triangle")
