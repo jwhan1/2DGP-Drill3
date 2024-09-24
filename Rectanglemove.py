@@ -5,18 +5,22 @@ open_canvas()
 os.getcwd()
 
 grass = load_image('grass.png')
-image = load_image('character.png')
+boy = load_image('character.png')
 
 open_canvas()
 
 def run_draw_circle():
- print("circle\n")
+ print("circle")
+
+ clear_canvas_now()
+ boy.draw_now(400,300)
+ delay(1)
  pass#내용이 없는 함수
 
 
 
 def run_draw_rectangle():
- print("rectangle\n")
+ print("rectangle")
  pass#내용이 없는 함수
 
 
