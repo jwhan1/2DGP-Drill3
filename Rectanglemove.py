@@ -56,10 +56,15 @@ def run_draw_rectangle():
 
 
 def run_bottom_line():
-  print("bottom line")
+  print("bottom line")#(700,50)에서(100,50)까지
+  for x in range(700,100,-10):
+    draw_boy(x,50)
   pass
 def run_left_line():
-  print("left line")
+  print("left line")#(100,50)에서(400,500)까지
+  for x in range(100,400,10):
+    y = 50 + 450 * (x - 100) / 300
+    draw_boy(x,y)
   pass
 def run_right_line():
   print("right line")
