@@ -24,9 +24,6 @@ def run_draw_circle():
     y= r * math.sin(theta) + cy
     draw_boy(x,y)
 
-    
-
-
 def run_top():
   print('top')
   for x in range(1,800,10):
@@ -82,9 +79,9 @@ def run_draw_triangle():
   pass
 
 #뼈대를 잡기
-while True:
- #run_draw_rectangle()
- #run_draw_circle()
+while 1:
+ run_draw_rectangle()
+ run_draw_circle()
  run_draw_triangle()
 
 close_canvas()
