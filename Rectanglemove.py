@@ -47,16 +47,34 @@ def run_left():
   pass
 def run_draw_rectangle():
  print("rectangle")
- #run_top()
- #run_right()
- #run_bottom()
+ run_top()
+ run_right()
+ run_bottom()
  run_left()
  pass#내용이 없는 함수
 
 
+
+def run_bottom_line():
+  print("bottom line")
+  pass
+def run_left_line():
+  print("left line")
+  pass
+def run_right_line():
+  print("right line")
+  pass
+def run_draw_triangle():
+  print("triangle")
+  run_bottom_line()
+  run_left_line()
+  run_right_line()
+  pass
+
 #뼈대를 잡기
 while True:
- run_draw_rectangle()
+ #run_draw_rectangle()
  #run_draw_circle()
+ run_draw_triangle()
 
 close_canvas()
