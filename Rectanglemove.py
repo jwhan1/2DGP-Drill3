@@ -13,12 +13,11 @@ open_canvas()
 def run_draw_circle():
   print("circle")
 
-  r=300
-
-  for degree in range(0,360,3):#각도 정의
+  r, cx, cy = 300, 800 // 2, 600 // 2
+  for degree in range(0,360,3):# 각도 정의
     theta = math.radians(degree)
-    x= r * math.cos(theta)
-    y= r * math.sin(theta)
+    x= r * math.cos(theta) + cx
+    y= r * math.sin(theta) + cy
 
     clear_canvas_now()
     boy.draw_now(x,y)
@@ -32,16 +31,9 @@ def run_draw_rectangle():
  pass#내용이 없는 함수
 
 
-
-
-
-
-
 #뼈대를 잡기
 while True:
  run_draw_rectangle()
  run_draw_circle()
-
-
 
 close_canvas()
