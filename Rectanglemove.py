@@ -1,8 +1,6 @@
-import pico2d
-import os
 from pico2d import *
+import os
 import math
-open_canvas()
 os.getcwd()
 
 grass = load_image('grass.png')
@@ -21,13 +19,27 @@ def run_draw_circle():
 
     clear_canvas_now()
     boy.draw_now(x,y)
-    delay(1)
-  pass#내용이 없는 함수
+    delay(0.1)
 
 
-
+def run_top():
+  print('top')
+  pass
+def run_right():
+  print('right')
+  pass
+def run_bottom():
+  print('bottom')
+  pass
+def run_left():
+  print('left')
+  pass
 def run_draw_rectangle():
  print("rectangle")
+ run_top()
+ run_right()
+ run_bottom()
+ run_left()
  pass#내용이 없는 함수
 
 
