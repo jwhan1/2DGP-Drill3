@@ -8,6 +8,11 @@ boy = load_image('character.png')
 
 open_canvas()
 
+def draw_boy(x,y):
+  clear_canvas_now()
+  boy.draw_now(x,y)
+  delay(0.1)
+  
 def run_draw_circle():
   print("circle")
 
@@ -17,13 +22,13 @@ def run_draw_circle():
     x= r * math.cos(theta) + cx
     y= r * math.sin(theta) + cy
 
-    clear_canvas_now()
-    boy.draw_now(x,y)
-    delay(0.1)
+    
 
 
 def run_top():
   print('top')
+  for x in range(1,800,10):
+    draw_boy(x,650)
   pass
 def run_right():
   print('right')
